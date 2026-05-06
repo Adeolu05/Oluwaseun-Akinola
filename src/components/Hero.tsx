@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90dvh] flex items-center pt-[max(6rem,env(safe-area-inset-top,0px)+5rem)] pb-16 overflow-hidden">
+    <section className="relative min-h-[90dvh] flex items-center pt-[max(6.75rem,calc(env(safe-area-inset-top,0px)+5.75rem))] pb-16 overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-7xl mx-auto -z-10 opacity-30 pointer-events-none">
         <div className="absolute top-20 right-0 w-[40rem] h-[40rem] bg-muted-sage rounded-full blur-3xl mix-blend-multiply opacity-50"></div>
