@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
+    <section className="relative min-h-[90dvh] flex items-center pt-[max(6rem,env(safe-area-inset-top,0px)+5rem)] pb-16 overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-7xl mx-auto -z-10 opacity-30 pointer-events-none">
         <div className="absolute top-20 right-0 w-[40rem] h-[40rem] bg-muted-sage rounded-full blur-3xl mix-blend-multiply opacity-50"></div>
@@ -21,7 +21,7 @@ export function Hero() {
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-soft-gold mb-6 border border-soft-gold/30 rounded-full px-4 py-1.5 bg-soft-gold/5">
             Faith • Advocacy • Diplomacy • Impact
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-navy-blue leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-navy-blue leading-tight mb-6 text-balance">
             Building bridges through <span className="italic text-deep-green">advocacy</span>, diplomacy, faith, and impact.
           </h1>
           <p className="text-lg lg:text-xl text-muted-grey leading-relaxed mb-10 max-w-xl">

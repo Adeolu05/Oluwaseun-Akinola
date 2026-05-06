@@ -28,6 +28,16 @@ Open the URL shown in the terminal (defaults to port **3000**).
 
 The site loads photos from **`public/images/`** (for example `oluwaseun-akinola-hero-portrait.jpg`). Original exports are kept under **`image/`** as `oluwaseun-akinola-archive-01.jpg` … `archive-46.jpg`. Replace or add files in `public/images/` and update paths in `Hero`, `About`, and `Gallery` if you change filenames.
 
+## Repository
+
+Source: [github.com/Adeolu05/Oluwaseun-Akinola](https://github.com/Adeolu05/Oluwaseun-Akinola)
+
+## Production checklist
+
+- Run `npm run lint` and `npm run build` before deploy.
+- Favicon: `public/favicon.svg` (and `public/site.webmanifest`).
+- After you have a live URL, add `og:url` and `og:image` (absolute URL to a 1200×630 hero or logo) in `index.html` for best link previews.
+
 ## Deploy
 
 Build with `npm run build`, then host the `dist` folder on any static host (Netlify, Vercel, GitHub Pages with the correct `base` if using a subdirectory, etc.).
