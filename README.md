@@ -15,6 +15,10 @@ npm run dev
 
 Open the URL shown in the terminal (defaults to port **3000**).
 
+## Scroll experience
+
+On viewports where motion is allowed, the site uses **[Lenis](https://github.com/darkroomengineering/lenis)** for smooth, weighted scrolling and eases in-page anchor jumps (with offset for the fixed header). If the user prefers reduced motion, Lenis stays off and the progress bar under the header is hidden.
+
 ## Scripts
 
 | Command | Description |

@@ -8,23 +8,26 @@ import { Gallery } from './components/Gallery';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { SmoothScroll } from './components/SmoothScroll';
 
 export default function App() {
   return (
-    <div id="top" className="antialiased overflow-x-hidden selection:bg-soft-gold/30 selection:text-navy-blue min-h-screen flex flex-col">
-      <Header />
-      <main className="w-full min-w-0 flex-1">
-        <Hero />
-        <About />
-        <ImpactWork />
-        <Speaking />
-        <Achievements />
-        <Gallery />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <SmoothScroll>
+      <div id="top" className="antialiased overflow-x-hidden selection:bg-soft-gold/30 selection:text-navy-blue min-h-screen flex flex-col">
+        <Header />
+        <main className="w-full min-w-0 flex-1">
+          <Hero />
+          <About />
+          <ImpactWork />
+          <Speaking />
+          <Achievements />
+          <Gallery />
+          <Testimonials />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </SmoothScroll>
   );
 }
 
